@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxComply | RegTech for Luxembourg</title>
+    <meta name="description" content="Compliance Management Platform for small financial companies in Luxembourg. Track KYC, AML, and Risk." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#E6EBEF', // Cool Gray
+                100: '#D1E0EB',
+                200: '#ADBFCC',
+                500: '#3FA7A3', // Soft Teal
+                600: '#348B87',
+                700: '#2E4A62', // Slate Blue
+                800: '#0B1F33', // Deep Navy Blue (Primary)
+                900: '#050E17', // Darker Navy
+              },
+              status: {
+                success: '#2ECC71',
+                warning: '#F5A623',
+                error: '#E74C3C',
+                info: '#3498DB',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Manrope', sans-serif; }
+      /* Smooth scrolling */
+      html { scroll-behavior: smooth; }
+      /* Custom scrollbar for dashboard */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #c1c1c1; 
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
